@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8"/>
+    <style>
+        .result-box {
+            display: flex;
+            width: 500px;
+            height: 500px;
+            margin: auto;
+            border: 2px solid rgb(35, 255, 43);
+            text-align: center;
+            line-height: 500px;
+            align-content: center;
+            justify-content: center;
+        }
+        p{
+            
+            width: 30px;
+            height: 30px;
+            margin: auto;
+            border: 2px solid rgb(35, 255, 43);
+            
+            line-height: 30px;
+        }
+        
+    </style>
+    <title>배열 출력</title>
+</head>
+<body>
+
+    <div class="result-box"></div>
+    <button class="switch-button">멈춰!</button>
+    <script>
+        function delay(ms) {
+            return new Promise(resolve => setTimeout(resolve, ms));
+        }
+
+        async function displayArray() {
+            let array = ['하나', '둘', '셋', '야!'];
+            // array.splice(2);
+            
+            for (let a = 0; a < array.length; a++) {
+                document.querySelector('.result-box').innerHTML ='<p>' + array[a] + '</p>';
+                await delay(3000);  // 3초 대기
+            }
+        }
+
+        displayArray();
+    </script>
+</body>
+</html>

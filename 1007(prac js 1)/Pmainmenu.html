@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta>
+        <style>
+            *{
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+            a{
+                text-decoration: none;
+            }
+            ul,ol{
+                list-style-type: none;
+            }
+            body{
+                font-size: 16px;
+                line-height: 1.4em;
+                font-weight: 400;
+            }
+            h1{
+                font-size: 20px;
+                font-weight: 750;
+            }
+            header{
+                width: 100%;
+                background-color: rgb(255, 216, 165);
+            }
+            header > .container{
+                width: 1200px;
+                position: relative;
+                height: 120px;
+                top: 0;
+                bottom: 0;
+                margin: 0 auto;
+                background-color: azure;
+            }
+            .main-menu{
+                position: absolute;
+                right: 0;
+                bottom: 0;
+                background-color: red;
+            }
+            .main-ul{
+                display: flex;
+            }
+            .main-ul-contents{
+                padding: 11px 15px;
+            }
+            .sub-ul{
+                display: none;
+                position: absolute;
+            }
+            #muc1:hover > #muc1_1{
+                display:flex;
+                background-color: red;
+            }
+            .sub-ul{
+                width: 100%;
+            }
+            .sub-ul-contents1{
+                padding: 10px;
+            }
+
+
+        </style>
+        <title>
+            aa
+        </title>
+    </head>
+    <body>
+        <header>
+            <div class="container">
+                <div class="main-menu">
+                    <ul class="main-ul">
+                        <li class="main-ul-contents" id="muc1">content1
+                            <ul class="sub-ul" id="muc1_1">
+                                <li class="sub-ul-contents1"><h1>sub-con1</h1>
+                                    <ul>
+                                        <li>1</li>
+                                        <li>2</li>
+                                        <li>3</li>
+                                        <li>4</li>
+                                    </ul>
+                                </li>
+                                <li class="sub-ul-contents1"><h1>sub-con1</h1>
+                                    <ul>
+                                        <li>1</li>
+                                        <li>2</li>
+                                        <li>3</li>
+                                        <li>4</li>
+                                    </ul>
+                                </li>
+                                <li class="sub-ul-contents1"><h1>sub-con1</h1>
+                                    <ul>
+                                        <li>1</li>
+                                        <li>2</li>
+                                        <li>3</li>
+                                        <li>4</li>
+                                    </ul>
+                                </li>
+                            </ul>
+                            
+                        </li>
+                        <li class="main-ul-contents" >content2
+                            <ul class="sub-ul"><h1>sub-con1</h1>
+                                <li class="sub-ul-contents2">sub-con2-1</li>
+                                <li class="sub-ul-contents2">sub-con2-2</li>
+                                <li class="sub-ul-contents2">sub-con2-3</li>
+                            </ul>
+                        </li>
+                        <li class="main-ul-contents">content3
+                            <ul class="sub-ul"><h1>sub-con1</h1>
+                                <li class="sub-ul-contents3">sub-con3-1</li>
+                                <li class="sub-ul-contents3">sub-con3-2</li>
+                                <li class="sub-ul-contents3">sub-con3-3</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </header>
+    </body>
+</html>

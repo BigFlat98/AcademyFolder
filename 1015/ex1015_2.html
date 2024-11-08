@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<!--객체 연습, 수업 자료 ppt 6번 실습-->
+
+<html>
+    <head>
+        <meta />
+
+    </head>
+    <body>
+        <script>
+            let rand = Math.random()//0.~~ 형태의 난수 생성,
+            console.log(rand);
+            console.log(rand * 100);
+            console.log(Math.floor(rand * 100));//Math.floor -> 소숫점 버림
+            
+            let book ={
+                title:'hhh',
+                page:264,
+                price:123456,
+
+                info: function(){
+                    alert("title:"+this.title +", page:"+this.page );
+                }
+
+            }
+            book.info();
+
+
+            class car{
+                constructor(kind,price){
+                    this.kind = kind;
+                    this.price = price;
+                }
+            }
+
+            let ram = new car("ram",120);
+            console.log(ram.kind);
+            ram.kind = 1234;
+            console.log(ram.kind);
+
+            const date = new Date;
+            let fulldate = date.getFullYear();
+            console.log(fulldate);
+        </script>
+    </body>
+</html>

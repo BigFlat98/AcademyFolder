@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <style>
+            .box{
+                width: 100px;
+                height: 100px;
+                /*position: static;    default position*/
+                position:absolute; /*각 박스가 붕 떠서 겹쳐짐*/
+                /*absolute상태는 각 박스가 다른 박스태그 안에 있어도 부모 박스 기준이 아닌 body를 기준으로 위치가 적용된다. */
+                /* body기준이기 때문에 창을 늘이고 줄여도 위치가 각 꼭짓점 기준으로 일정하다 */
+
+                
+            }
+            .box:nth-child(1){
+                background-color: red;
+                left: 10px; top: 10px;
+                z-index: 2000;
+                /* z-index -> 값이 클수록 다른 컨텐츠와 겹쳤을 때 창의 앞쪽으로 노출됨 */
+            }
+            .box:nth-child(2){
+                background-color: green;
+                left: 50px; top: 50px;
+            }
+            .box:nth-child(3){
+                background-color: blue;
+                left: 120px; top: 90px;
+                border: 3px solid #335555;
+            }
+            .box:nth-child(4){
+                background-color: blue;
+                right: 60px; bottom: 60px;
+            }
+            body >div{
+                width: 400px; height: 100px;
+                border: 3px solid #45a27b;
+            }
+        </style>
+        <title>position P</title>
+    </head>
+    <body>
+        <h1>asdfasdfasdf</h1>
+        <div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+        </div>
+       
+        <h1>asdfsadfsadf</h1>
+
+        <!-- div 태그는 position:absolute 성질을 갖고있기 때문에 화면에서 띄워져서 body기준으로 위치가 정해짐. 따라서 h1태그 위에 노출됨 -->
+    </body>
+</html>

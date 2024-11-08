@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <h1>ex3</h1>
+        <meta charset="utf-8">
+        <style>
+            body{
+                background-color:#f3c671;
+            }
+             div{
+                background-color:#71c1f3;
+                color:rgb(57,57,142);
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <h1>ex3</h1>
+        </header>
+        <div id="content">
+            <h2>순서없는 목록</h2>
+            <ul>
+                <li>
+                    coffee
+                </li>
+                <p> 
+                    &nbsp;&nbsp;asdfsadfsadfsadfasdfsadfsadfasdfsdaf
+                </p>
+                <li>
+                    tea
+                </li>
+                <li>
+                    milk
+                </li>
+            </ul>
+            <h2>순서가 있는 목록</h2>
+            <ol>    
+                <li value="1">
+                    coffee2
+                </li>
+                <li value="2">
+                    tea2
+                </li>
+                <li value="3">
+                    milk2
+                </li>
+            </ol>
+        </div>
+
+
+        <hr />
+
+        <div id ="content2">
+            <h1>중첩 리스트</h1>
+            <ul>
+                <li><h3>coffee3
+                    <ol>
+                        <li value="1">
+                            아아
+                        </li>
+                        <li value="2">
+                            라떼
+                        </li>
+                        <li value="3">
+                            콜드브루
+                        </li>
+                    </ol>
+                </h3></li>
+                <li><h3>milk3
+                    <ol type="I">
+                            <li value="1">
+                                아아dk
+                            </li>
+                            <li value="2">
+                                라떼dk
+                            </li>
+                            <li value="3">
+                                콜드브루dk
+                            </li>
+                    </ol>
+                </h3></li>
+                <li><h3>cafe
+                    <ol type="i">
+                            <li value="1"><a href="https://www.starbucks.co.kr/index.do" target="_self">
+                                스벅
+                            </a>
+                            </li>
+                            <li value="2"><a href="https://paikdabang.com/" target="_blank">
+                                백
+                            </a>
+                            </li>
+                    </ol>
+                </h3></li>
+            </ul>
+        </div>
+        <hr />
+        
+        <h1>3중 중첩 리스트</h1>
+        <ul>
+            <li>a
+                <ul>
+                    <li>
+                        a1
+                        <ol>
+                            <li>
+                                a1_1
+                            </li>
+                            <li>
+                                a1_2
+                            </li>
+                        </ol>
+                    </li>
+                    <li>
+                        a2
+                        <ol type="I">
+                            <li>
+                                a2_1
+                            </li>
+                            <li>
+                                a2_2
+                            </li>
+                        </ol>
+                    </li>
+                    </ol>
+                </ul>
+            </li>
+            <li>b
+                <ul>
+                    <li>
+                        a1
+                        <ol>
+                            <li>
+                                a1_1
+                            </li>
+                            <li>
+                                a1_2
+                            </li>
+                        </ol>
+                    </li>
+                    <li>
+                        a2
+                        <ol reversed>
+                            <li>
+                                a2_1
+                            </li>
+                            <li>
+                                a2_2
+                            </li>
+                        </ol>
+                    </li>
+                    </ol>
+                </ul>
+            </li>
+        </ul>
+        <hr />
+        <h1>테이블 연습</h1>
+        <table border="1">
+            <tr>
+              <th>First name</th>
+              <th>Last name</th>
+              <th>Score</th>
+              <th>score1</th>
+            </tr>
+            <tr>
+              <td>Jill</td>
+              <td>Smith</td>
+              <td>50</td>
+              <td>80</td>
+            </tr>
+            <tr>
+              <td>Eve</td>
+              <td>Jackson</td>
+              <td>94</td>
+            </tr>
+            <tr>
+              <td>John</td>
+              <td>Doe</td>
+              <td>80</td>
+              <td>90</td>
+            </tr>
+        </table>
+        <hr />
+        <h1>table merge pr</h1>
+        <h2>column merge</h2>
+        <table border="2">
+            <tr>
+               <th>no</th> 
+               <th colspan="2">o</th>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>as</td>
+                <td>as</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>ad</td>
+                <td>ad</td>
+            </tr>
+        </table>
+        <h1>row merge pr</h1>
+        <table border="1">
+            <tr>
+                <th> no.</th> <td>aa</td>
+            </tr>
+            <tr>
+                <th>1</th> <td rowspan="3">asdf</td>
+            </tr>
+            <tr>
+                <td>fdsa</td>
+            </tr>
+            <tr>
+                <td>asdf</td>
+            </tr>
+        </table>
+
+        <hr />
+        <table border ="1">
+            <tr>
+                <th>name</th> <th colspan="2">phone</th> <th>phone2</th>
+            </tr>
+            <tr>
+                <td>aa</td> <td rowspan="2">1234</td> <td>1234</td> <td>aa</td>
+            </tr>
+            <tr>
+                <td>bb</td> <!--<td>4321</td>--> <td>4213</td> <td>bb</td>
+            </tr>
+        </table>
+        <hr />
+        <h1>pr</h1>
+        <table border ="1">
+            <tr>
+                <th>1</th> <th>2</th> <th>3</th> <th>4</th> <th>5</th> <th>비고</th>
+            </tr>
+            <tr>
+                <td>6</td> <td>7</td> <td>8</td> <td>9</td> <td>10</td>  <td rowspan="4">11</td>
+            </tr>
+            <tr>
+                <td>12</td> <td colspan="2">13</td><td>14</td> <td>18</td> 
+            </tr>
+            <tr>
+                <td rowspan="2">16</td> <td>19</td> <td>18</td> <td> </td> <td> </td> 
+            </tr>
+            <tr>
+                 <td> </td> <td> </td> <td> </td> <td> </td> 
+            </tr>
+        </table>
+        <hr />
+        <img src="./img/2D81TKWA1A_1.jpg" alt="도지는 화성에 가버렸어요~">
+        <footer>
+
+        </footer>
+    </body>
+</html>

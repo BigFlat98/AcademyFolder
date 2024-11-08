@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Document</title>
+    
+    <!-- 함수 정의: h1 태그로 텍스트를 감싸는 HTML 문자열을 생성 -->
+    <script>
+        const h1 = (text) => `<h1>${text}</h1>`;
+    </script>
+
+    <!-- body가 아직 로드되지 않았기 때문에 실행되지 않음 -->
+    <script>
+        document.body.innerHTML += h1('1번째 script 태그');
+    </script>
+</head>
+
+<body>
+    <h1>제목</h1>
+    <h3 id="clickCount">클릭 횟수 : 0</h3>
+
+    <script>
+        let count = 0; // 클릭 카운트를 저장할 변수
+        const cc = document.querySelector("#clickCount")
+        cc.addEventListener('click',function(){
+            count++;
+            cc.textContent=`클릭횟수: ${count}`
+        });
+        
+        
+    </script>
+</body>
+</html>

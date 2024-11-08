@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+
+<html lang="ko">
+    <head>
+        <meta />
+        <title>
+            p
+        </title>
+        <style>
+            
+        </style>
+        <script refer src="./js/prac.js"></script>
+    </head>
+    <body>
+        <div class="bargen">
+            <div class="price">
+                가격<input type="text" id="p">원
+            </div>
+            <div class="sidcount">
+                할인율<input type="text" id="d">%
+            </div>
+            <button onclick="showPrice()">가격 확인</button>
+        </div>
+        <div class="result">결과</div>
+
+        <hr />
+        <h1>짝수 더하기</h1>
+        <div>
+            <div class="result2">결과</div>
+        </div>
+        <script>
+            let sum=0;
+            let start = Number(prompt("시작 숫자"));
+            let end = Number(prompt("마지막 숫자"));
+            let i = 0;
+            if(start >= end){
+                for(let i=end; i<=start;i+=1){
+                    if(i%2===0){
+                        sum +=i;
+                    }
+                }
+            }
+            else{
+                for(let i=start; i<=end;i+=1){
+                    if(i%2===0){
+                        sum +=i;
+                    }
+                }
+            }
+            if(sum==0){
+                document.querySelector(".result2").innerHTML="수를 멍청하게 넣었어요";
+            }
+            else{
+                document.querySelector(".result2").innerHTML=start+"부터 "+end+"까지 짝수의 합은"+sum;
+            }
+            
+
+        </script>
+
+
+
+        <hr />
+        <h1>3의 배수 검사</h1>
+        <div class="result3">결과</div>
+        <script>
+            let charV =prompt("자연수 입력");
+                if(charV != null){
+                    if(charV%3===0){//값과 자료형이 모두 같은지 확인하는 비교연산자.
+                        document.querySelector(".result3").innerHTML=charV+"는 3의 배수.";
+                    }
+                    else{
+                        document.querySelector(".result3").innerHTML=charV+"는 3의 배수가 아니에용.";
+                    }
+                }
+        </script>
+
+        <hr />
+
+        <!-- <script>
+            let session = prompt("1,2,3중 입력","1");
+            switch(session){
+                case "1":decument.write("<p>1</p>"); break;
+                case "2":document.write("<p>2</p>"); break;
+                default :document.write("<p>3</p>"); break;
+            }
+            //만약 break문 없으면 조건에 해당되는 부분분터 default까지 모든 case문이 조건에 맞지 않아도 실행됨
+            
+        </script> -->
+
+
+        <hr />
+
+
+        <h1>구구단</h1>
+        <script>
+            for(let i = 2; i<=9; i+=1){
+                document.write("<div>");
+                document.wirte("<h3>"+i+"단</h3>");
+                for(let j = 1;j<=9; j+=1){
+                    document.wirte(i+"x"+j+"="+(i*j)+"<br />");
+                }
+                document.write("</div");
+            }
+        </script>
+
+        
+
+    </body>
+</html>

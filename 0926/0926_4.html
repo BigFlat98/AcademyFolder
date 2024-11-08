@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta>
+        <style>
+            *{
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+            a{
+                text-decoration: none;
+            }
+            ul{
+                list-style-type: none;
+            }
+            #head{
+                width: 100%;
+                height: 80px;
+                top: 0;
+                left: 0;
+                position: fixed;
+                line-height: 80px;
+                background-color: rgb(76, 76, 236);
+            }
+            #head > h1{
+                float: left;
+                padding: 0 15px;
+            }
+            #head > nav{
+                float: right;
+                line-height: 80px;
+            }
+            #head > nav > ul > li{
+                display: inline-block;
+                padding: 0 20px;
+            }
+            #head > nav > ul > li:hover{
+                background-color: rgb(41, 41, 156);
+            }
+            #head > nav > ul > li > a{
+                text-decoration: none;
+                color: aliceblue;
+            }
+            /* #nav1:hover>ul{
+                display: block;
+                background-color: rgb(41, 41, 156);
+            } */
+            .nav_li:hover>ul{
+                display: block;
+                background-color: rgb(41, 41, 156);
+            }
+
+            .hidden_about{
+                display: none;
+            }
+            #head::after{
+                content: "";
+                display: block;
+                clear: both;
+            }
+
+            #container{
+                width: 100%;
+                margin-top: 80px;
+                left: 0;
+            }
+            #container::after{
+                content: "";
+                display: block;
+                clear: both;
+            }
+            #Pleft{
+                float: left;
+                width: 80%;
+                background-color: rgb(208, 208, 255);
+            }
+            #Cleft{
+                float: left;
+                width: 20%;
+                background-color: rgb(234, 191, 255);
+            }
+            #Cright{
+                float: right;
+                width: 80%;
+                background-color: rgb(208, 208, 255);
+            }
+            #Pright{
+                float: right;
+                width: 20%;
+                background-color: rgb(149, 149, 253);
+            }
+
+            #Pright_con > li:hover{
+                background-color: rgb(41, 41, 156);
+            }
+
+            footer{
+                clear: both;
+            }
+
+
+        </style>
+        <title>
+            aa
+        </title>
+    </head>
+    <body>
+        <div id="head">
+            <h1>Test</h1>
+            <nav>
+                <ul>
+                    <li id="nav1" class="nav_li"><a href="#" id="nav_a1">about1</a>
+                        <ul id="hidden_about1" class="hidden_about">
+                            <li><a href="#">ab1-1</a></li>
+                            <li><a href="#">ab1-2</a></li>
+                            <li><a href="#">ab1-3</a></li>
+                            <li><a href="#">ab1-4</a></li>
+                        </ul>
+                    </li>
+                    <li id="nav2" class="nav_li"><a href="#" id="nav_a2">about2</a>
+                        <ul id="hidden_about2" class="hidden_about">
+                            <li><a href="#">ab2-1</a></li>
+                            <li><a href="#">ab2-2</a></li>
+                            <li><a href="#">ab2-3</a></li>
+                            <li><a href="#">ab2-4</a></li>
+                        </ul>
+                    </li>
+                    <li id="nav3" class="nav_li"><a href="#" id="nav_a3">about3</a>
+                        <ul id="hidden_about3" class="hidden_about">
+                            <li><a href="#">ab3-1</a></li>
+                            <li><a href="#">ab3-2</a></li>
+                            <li><a href="#">ab3-3</a></li>
+                            <li><a href="#">ab3-4</a></li>
+                        </ul>
+                    </li>
+                    <li id="nav4" class="nav_li"><a href="#" id="nav_a4">about4</a>
+                        <ul id="hidden_about4" class="hidden_about">
+                            <li><a href="#">ab4-1</a></li>
+                            <li><a href="#">ab4-2</a></li>
+                            <li><a href="#">ab4-3</a></li>
+                            <li><a href="#">ab4-4</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <div id="container">
+            <div id="Pleft">
+                <div id="Cleft">aa</div>
+                <div id="Cright">aa</div>
+            </div>
+            <div id="Pright">
+                <ul id="Pright_con">
+                    <li><a href="#" id="Pc1">pc1</a></li>
+                    <li><a href="#" id="Pc2">pc2</a></li>
+                    <li><a href="#" id="Pc3">pc3</a></li>
+                    <li><a href="#" id="Pc4">pc4</a></li>
+                </ul>
+            </div>
+        </div>
+        <footer>end<hr /></footer>
+    </body>
+</html>

@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta>
+        <style>
+            *{
+                padding: 0;
+                margin: 0;
+                box-sizing: border-box;
+            }
+            ul li{
+		        list-style: none;
+	        }       
+
+            .header{
+                position: fixed;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 80px;
+                background-color: rgb(218, 207, 231);
+            }
+
+            #logo{
+                display: inline-block;
+                height: 50px;
+                padding: 15px 0 15px 30px;
+            }
+
+            #logoImg{
+                height: 50px;
+            }
+
+            #headerNav{
+                float: right;
+                margin-right: 30px;
+            }
+
+            #headerNavUl > li{
+                float:left;
+		        width:140px;
+		        position:relative;
+                line-height: 80px;
+            }
+            #headerNavUl > li >ul {
+                width:130px;
+                display:none;
+                position: absolute;
+                font-size:14px;
+                background: rgb(218, 207, 231);
+            }
+            #headerNavUl > li:hover >ul {
+                display:block;
+            }
+
+            #headerNavUl > li >ul > li:hover{
+                background-color: orange;
+                transition: ease 1s;
+            }
+
+            #headerNavUl > li > a{
+                font-size: 20px;
+                text-decoration: none;
+            }
+
+
+
+            .header::after{
+                content: "";
+                display: block;
+                clear: both;
+            }
+            .container{
+                margin-top: 80px;
+                background-color: rgb(201, 201, 201);
+            }
+            #Pleft{
+                float: left;
+                width: 80%;
+                background-color: rgb(221, 221, 221);
+            }
+            #Pright{
+                float: right;
+                width: 20%;
+                background-color: rgb(220, 198, 250);
+            }
+            #Cleft{
+                float: left;
+                width: 25%;
+                background-color: rgb(232, 232, 232);
+            }
+
+            #Cleft_ul > li{
+                display: block;
+                width: 100%;
+                height: 70px;
+            }
+            #Cleft_ul > li:hover{
+                background-color: rgb(141, 181, 255);
+            }
+
+            #Cleft_ul > li:focus > a{
+                color: rgba(99, 82, 226, 0.8);
+            }
+            #Cleft_ul > li >a{
+                display: block;
+                width: 100%;
+                line-height: 70px;
+                text-decoration: none;
+                padding-left: 20px;
+                font-size: 20px;
+                color: rgba(53, 53, 53, 0.4);
+            }
+            #Cleft_ul > li >a:focus{
+                color: rgba(143, 25, 47, 0.4);
+            }
+            
+            #Cright{
+                float: right;
+                width: 75%;
+                background-color: rgb(232, 232, 232);
+            }
+
+
+            .container::after{
+                content: "";
+                display: block;
+                clear: both;
+            }
+
+            .main_con{
+                background-color: rgb(192, 226, 255);
+                border: 1px solid rgba(202, 207, 212, 0.5);
+                margin: 3px;
+            }
+            .footer{
+                width: 100%;
+                height: 20px;
+            }
+
+
+        </style>
+        <title>
+            P
+        </title>
+    </head>
+    <body>
+        <div class="header">
+            <a href="#" id="logo"><img src="./b31d242d695ecd203abd1906b2268029.jpg" id="logoImg"></a>
+            <nav id="headerNav">
+                <ul id="headerNavUl">
+                    <li><a href="#">a</a>
+                        <ul>
+                            <li><a href="#">a-1</a></li>
+                            <li><a href="#">a-1</a></li>
+                            <li><a href="#">a-1</a></li>
+                            <li><a href="#">a-1</a></li>
+                            <li><a href="#">a-1</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">b</a>
+                        <ul>
+                            <li><a href="#">a-1</a></li>
+                            <li><a href="#">a-1</a></li>
+                            <li><a href="#">a-1</a></li>
+                            <li><a href="#">a-1</a></li>
+                            <li><a href="#">a-1</a></li>
+                            <li><a href="#">a-1</a></li>
+                            <li><a href="#">a-1</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">c</a>
+                        <ul>
+                            <li><a href="#">a-1</a></li>
+                            <li><a href="#">a-1</a></li>
+                            <li><a href="#">a-1</a></li>
+                            <li><a href="#">a-1</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">d</a>
+                        <ul>
+                            <li><a href="#">a-1</a></li>
+                            <li><a href="#">a-1</a></li>
+                            <li><a href="#">a-1</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <div class="container">
+            <div id="Pleft">
+                <div id="Cleft">
+                    <ul id="Cleft_ul">
+                        <li><a href="#">a</a></li>
+                        <li><a href="#">a</a></li>
+                        <li><a href="#">a</a></li>
+                        <li><a href="#">a</a></li>
+                        <li><a href="#">a</a></li>
+                        <li><a href="#">a</a></li>
+                    </ul>
+                </div>
+                <div id="Cright">
+                    <div id="main_con1" class="main_con">
+                        <h1 id="main_con1_title">con1_title</h1>
+                        <p id="main_con1_text">text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text </p>
+                    </div>
+                    <div id="main_con2" class="main_con">
+                        <h1 id="main_con2_title">con2_title</h1>
+                        <p id="main_con2_text">text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text </p>
+                    </div>
+                    <div id="main_con3" class="main_con">
+                        <h1 id="main_con3_title">con3_title</h1>
+                        <p id="main_con3_text">text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text </p>
+                    </div>
+                    <div id="main_con4" class="main_con">
+                        <h1 id="main_con4_title">con4_title</h1>
+                        <p id="main_con4_text">text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text </p>
+                    </div>
+                    <div id="main_con5" class="main_con">
+                        <h1 id="main_con5_title">con5_title</h1>
+                        <p id="main_con5_text">text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text </p>
+                    </div>
+                </div>
+            </div>
+            <div id="Pright">
+                <ul>
+                    <li><a href="#">1</a></li>
+                    <li><a href="#">2</a></li>
+                    <li><a href="#">3</a></li>
+                    <li><a href="#">4</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer">footer</div>
+    </body>
+</html>

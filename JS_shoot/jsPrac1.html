@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta>
+
+    </head>
+
+    <body>
+        <h1>test</h1>
+        <p id ='demo'>
+            answer
+        </p>
+
+        <button type="button" onclick="document.write(5 + 6)"></button>
+
+
+        
+        <script>
+            document.getElementById('demo').innerHTML = "used innderHTML" ;
+            let age = 30;
+            // let age = 25; // SyntaxError: Identifier 'age' has already been declared
+            if (true) {
+                let age = 20; // 다른 스코프(블록 내)에서는 재선언 가능
+                console.log(age); // 출력: 20
+            }
+            console.log(age); // 출력: 30
+
+
+            const greet = function(a){
+                console.log("hi",a);
+            };
+            function beee(){
+                console.log('ji');
+            };
+            greet(15);
+            beee();
+            
+            const first = "fisrt";
+            const second = ",second";
+            const full = first + second;
+            console.log(full);
+            console.log(first.length);
+
+            console.log(full.slice(4,full.length));
+
+            let x = 5;
+            let y = ++x;
+            //산수 연산 먼저하고 대입연산
+
+            let t = 5;
+            let z = t++;
+            //대입연산 하고 산술 연산
+
+            x = true;
+            y = false;
+            A = x && y;
+            O = x || y;
+            N = !x;
+
+            //삼항 연산자
+            const old = 20;
+            const canVote = (old >=19) ? "투표 가능":"투표 불가";
+            console.log(canVote);
+
+            let fTemp = 122;
+            let cTemp = (fTemp - 32)*(5/9);
+            console.log(cTemp);
+            
+            let num1 = 456;
+            let num2 = 111;
+            function drop(a){
+                if(a >= 100){
+                    return  (a - (a%100));
+                };
+            };
+            console.log(drop(num1));
+            console.log(drop(num2));
+
+            let num = 12345;
+            // 숫자는 10000의 자리수만 제공
+
+            num1 = num - 12345 % 10000; // 10000
+            num2 = num - num % 1000 - num1;//2000
+            let num3 = num - num%100 -num1 -num2;// 300
+            let num4 = num - num%10 -num1 -num2 -num3; //40
+            let num5 = num%10 //5
+            console.log(num1/10000 + num2/1000+ num3/100 + num4/10 + num5)
+
+            let numStr = num.toString();
+            let one = Number(numStr[4])
+            let two = Number(numStr[3])
+            let three = Number(numStr[2])
+            let four = Number(numStr[1])
+            let five = Number(numStr[0])
+            console.log(one+two+three+four+five)
+
+
+            let input = Number(prompt('숫자 입력',"숫자"))
+            switch (input % 2){
+                case 0:
+                    console.log("짝");
+                    break;
+                case 1:
+                    alert("홀");
+                    break;
+                default:
+                    console.log("빠스잖아?");
+                    break;
+            };
+
+            for(let a = 0; a <10; a++){
+                console.log("빠스잖아?");
+            };
+            let c;
+            for(let i = 0 ; i<5; i++){
+                c ="";
+                for(let j = 0; j<=i; j++){
+                    c += "*"
+                }
+                console.log(c);
+            }
+            for(let i = 5 ; i>0; i--){
+                c ="";
+                for(let j = 0; j<i; j++){
+                    c += "*"
+                }
+                console.log(c);
+            }
+
+            function createItemTEmplate(category){
+                const items = [];
+
+            }
+
+            //클로저
+            function createItemTemplate(category) {
+            const items = [];
+
+            return function addItem(item) {
+                items.push({ category, item });
+                console.log(items);
+            };
+            }
+
+            const addFruit = createItemTemplate('Fruit');
+            addFruit('Apple'); // 출력: [{ category: 'Fruit', item: 'Apple' }]
+            addFruit('Banana'); // 출력: [{ category: 'Fruit', item: 'Apple' }, { category: 'Fruit', item: 'Banana' }]
+
+            const addVegetable = createItemTemplate('Vegetable');
+            addVegetable('Carrot'); // 출력: [{ category: 'Vegetable', item: 'Carrot' }]
+
+            //짝수만 골라내는 애로우 함수
+            const filterEvenNumbers = (numbers) => numbers.filter(number => number % 2 ==0); //filter를 사용하면 numbers를 초기화 하는 것이 아닌 새로운 배열이 생성됨.
+                                                    //filter함수는 배열에서 조건에 해당되는 값이 있는 인덱스만 새로운 배열에 추가.
+            const numbers = [1, 2, 3, 4, 5, 6];
+            const evenNumbers = filterEvenNumbers(numbers);
+            console.log(evenNumbers); // [2, 4, 6] 출력
+            console.log(numbers)
+
+            //주어진 문자열들의 배열에서 길이가 5 이상인 문자열만 골라내는 Arrow 함수 filterLongStrings를 작성하세요.(filter method 사용)
+            const filterLongStrings = (strings) => strings.filter(string => string.length >=5);
+            const strings = ['apple', 'banana', 'cherry', 'date', 'fig'];
+            const longStrings = filterLongStrings(strings);
+            console.log(longStrings); // ['banana', 'cherry'] 출력
+
+
+            // const newArray = array.filter((element, index, array) => {
+            // // 조건식
+            // });
+            // •	element: 배열의 현재 요소
+            // •	index (선택): 현재 요소의 인덱스
+            // •	array (선택): 호출된 배열 자체
+
+
+            
+        </script>
+    </body>
+</html>

@@ -1,0 +1,33 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Float With Overflow</title>
+    <style>
+        div.container {
+            overflow: hidden;/*내부에 있는 div에 float속성을 주고 부모 박스에height값이 지정돼있지 않다면 부모 박스의 
+            공간이 안잡히는 문제가 있음.
+             이를 해결하기 위해 overflow 속성을 주면 공간이 잡힘. 만약 overflow속성이 없으면 bg color도 적용안됨
+            그냥 내부에 있는 박스를 float속성을 주었을 때. 부모 박스의 공간도 주고싶다면 overflow속성을 주면 된다.*/
+            background-color: aquamarine;
+            /* height: 800px; */
+        }
+
+        div.item {
+            float: left;/*float속성을 사용하면 태그 박스가 갖고있는 내용만큼 크기가 줄어드는 성질이 생김*/
+            /* right를 사용하면 메뉴1 부터 오른쪽에서 나옴 */
+            margin: 0 3px;
+            padding: 10px;
+            border: 1px solid black;
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item">menu -1</div>
+        <div class="item">menu -2</div>
+        <div class="item">menu -3</div>
+        <div class="item">menu -4</div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+
+<html lang="ko">
+    <head>
+        <style>
+            .center{
+                width: 500px;
+                margin: 0 auto;
+                padding: 40px;
+            }
+            #cal{
+                display: flex;
+            }
+            #imP > img{
+                display: block;
+                width: 200px;
+            }
+
+            #rac{
+                display: none;
+                width: 0;
+                height: 0;
+                border: 3px solid #00ff2f;
+                text-align: center;
+                
+            }
+        </style>
+        <script refer src="./js/prac.js"></script>
+    </head>
+    <body>
+        <!-- <script>
+            // let saying = prompt("write something");
+            // document.write(saying);
+            //.write는 반드시 body부분에 입력 필요. 동기식 통신때만 작동
+
+
+        </script> -->
+        
+        <div class="howold center">
+            <button class="btn" onclick="calc()">how old?</button> <!--onclick="calc()" 스크립트 문을 넣어 함수 호출이 가능함-->
+            <div id="result" class="show">result</div>
+        </div>
+    
+        <div class="year center">
+            <button class="btn2" onclick="calc2()">leap year?</button>
+            <div id="result2" class="s">result</div>
+        </div>
+
+        <div id="cal" class="center">
+            <div id="imP">
+                <img src="./images.jpeg">
+            </div>
+            <div id="calP">
+                <div id="original">
+                    원래 가격 <input type="text" id="price" />원
+                </div>
+                <div id="discount">
+                    할인율 <input type="text" id="rate" />%
+                </div>
+                <button onclick="calPrice()">계산</button>
+                <div class="showResult"></div>
+            </div>
+
+            
+        </div>
+
+        <div class="makeRac center">
+            <div id="RacSize">
+                <div id="verticality">
+                    가로<input type="text" id="ver" />
+                </div>
+                <div id="horizontial">
+                    세로<input type="text" id="ho" />
+                </div>
+                <button onclick="letsmakearac()">생성</button>
+            </div>
+            <div id="rac">짜잔</div>
+        </div>
+        
+       
+
+
+
+
+        
+
+
+
+        
+
+
+
+    </body>
+</html>

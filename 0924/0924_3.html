@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+
+
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <style>
+            /* Simple Reset CSS */
+            * {
+            margin: 0; padding: 0;
+            box-sizing: border-box;
+            }
+    
+            body{
+                font-family: Arial, Helvetica, sans-serif;
+                color: rgb(24, 24, 24);
+                background-color: rgb(24, 201, 112);
+                -webkit-font-smoothing: antialiased;
+                -webkit-text-size-adjust: 100%;
+            }
+    
+            li{
+                list-style: none;
+            }
+            a{
+                text-decoration: none;
+            }
+    
+            h1,h2,h3,h4,h5.h6,p{
+                margin: 10px 5px;
+            }
+    
+            h1{
+                font-size: 1.8em;
+            }
+            /* reset done */
+
+
+
+
+            #wrap{
+                width: 100%;
+                margin-top: 60px;
+                /* 상단 바 높이가 60px이라 메인 컨텐츠 노출되는 위치도 위에서 60px떨어뜨림 */
+            }
+            header{
+                position: fixed;
+                height: 60px;
+                top: 0;
+                width: 100%;
+                z-index: 2000;
+                background-color: aliceblue;
+                box-shadow: 0 2px 2px rgba(0,0,0,0.05),0 1px 0 rgba(0,0,0,0.05);
+            }
+            .logo{
+                display: inline-block;
+                height: 36px;
+                margin: 12px 0 12px 25px;
+            }
+            .logo > img{
+                height: 36px;
+            }
+            nav{
+                float:right;
+            }
+            .nav-items{
+                margin-right:20px;
+            }
+            .nav-items > li{
+                display: inline-block;
+                /* li속성에 display:inline-block 속성을 주면 가로 정렬이 됨. 그리고 block 속성도 가져서 꾸미기 좋음 */
+            }
+            .nav-items > li > a{
+                line-height: 60px;
+                padding: 0 30px;
+                color: rgba(0,0,0,0.4);
+            }
+            .nav-items>li>a:hover{
+                color:rgba(0,0,0,0.8);
+            }
+
+            /* 지금 header에 들어가는 nav를 float속성을 부여했고 따라서 로고 이미지와 nav박스 사이에 공간이 생길 것
+            body에 들어가는 내용이든 다른 부모 태그 안에 있는 내용이든 그 사이에 비집고 들어와서 채워지려하는 특성이 생김
+
+            이 코드는 어떤 내용을 float를 사용에서 화면에서 띄웠을 때 가상의 빈 공간을 만들고 해당 공간을 float속성을 갖는 박스
+            주변에 빈 공간을 채워주는 코드 */
+            #content-wrap:after{
+                content: "";
+                display: block;
+                clear:both;
+            }
+
+    
+    
+        </style>
+    
+    </head>
+    <body>
+        <body>
+            <div id="wrap">
+              <header>
+                <a class="logo" href="#home"><img src="./b31d242d695ecd203abd1906b2268029.jpg"></a>
+                <nav>
+                  <ul class="nav-items">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#news">News</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="#about">About</a></li>
+                  </ul>
+                </nav>
+              </header>
+          
+              <div id="content-wrap">
+                <aside>
+                  <h1>Aside</h1>
+                  <ul>
+                    <li><a href="#" class="active">London</a></li>
+                    <li><a href="#">Paris</a></li>
+                    <li><a href="#">Tokyo</a></li>
+                    <li><a href="#">Newyork</a></li>
+                  </ul>
+                </aside>
+                <section>
+                  <article id="london">
+                    <h1>London</h1>
+                    <p>London is the capital city of England. It is the most populous city in the United Kingdom, with a metropolitan area of over 13 million inhabitants.</p>
+                    <p>Standing on the River Thames, London has been a major settlement for two millennia,its history going back to its founding by the Romans, who named it Londinium.</p>
+                    <p>London, also referred to as Greater London, is one of 9 regions of England and the top-level subdivision covering most of the city's metropolis. The small ancient City of London at its core once comprised the whole settlement, but as its urban area grew, the Corporation of London resisted attempts to amalgamate the city with its suburbs, causing "London" to be defined in a number ways for different purposes.</p>
+                  </article>
+                  <article id="paris">
+                    <h1>Paris</h1>
+                    <p>London is the capital city of England. It is the most populous city in the United Kingdom, with a metropolitan area of over 13 million inhabitants.</p>
+                    <p>Standing on the River Thames, London has been a major settlement for two millennia,its history going back to its founding by the Romans, who named it Londinium.</p>
+                    <p>London, also referred to as Greater London, is one of 9 regions of England and the top-level subdivision covering most of the city's metropolis. The small ancient City of London at its core once comprised the whole settlement, but as its urban area grew, the Corporation of London resisted attempts to amalgamate the city with its suburbs, causing "London" to be defined in a number ways for different purposes.</p>
+                  </article>
+                  <article id="tokyo">
+                    <h1>Tokyo</h1>
+                    <p>London is the capital city of England. It is the most populous city in the United Kingdom, with a metropolitan area of over 13 million inhabitants.</p>
+                    <p>Standing on the River Thames, London has been a major settlement for two millennia,its history going back to its founding by the Romans, who named it Londinium.</p>
+                    <p>London, also referred to as Greater London, is one of 9 regions of England and the top-level subdivision covering most of the city's metropolis. The small ancient City of London at its core once comprised the whole settlement, but as its urban area grew, the Corporation of London resisted attempts to amalgamate the city with its suburbs, causing "London" to be defined in a number ways for different purposes.</p>
+                  </article>
+                  <article id="newyork">
+                    <h1>Newyork</h1>
+                    <p>London is the capital city of England. It is the most populous city in the United Kingdom, with a metropolitan area of over 13 million inhabitants.</p>
+                    <p>Standing on the River Thames, London has been a major settlement for two millennia,its history going back to its founding by the Romans, who named it Londinium.</p>
+                    <p>London, also referred to as Greater London, is one of 9 regions of England and the top-level subdivision covering most of the city's metropolis. The small ancient City of London at its core once comprised the whole settlement, but as its urban area grew, the Corporation of London resisted attempts to amalgamate the city with its suburbs, causing "London" to be defined in a number ways for different purposes.</p>
+                  </article>
+                </section>
+                <!-- end of content-wrap -->
+              </div>
+              <footer>© Copyright 2016 ungmo2</footer>
+            <!-- end of wrap   -->
+            </div>
+          
+    </body>
+   </html>

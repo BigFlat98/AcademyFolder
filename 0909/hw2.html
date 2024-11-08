@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>hw2</title>
+        <h1>회원 가입을 환영합니다</h1>
+        <meta charset="UTF-8">
+
+    </head>
+    <body>
+        <form action="" method="post">
+        <fieldset>
+            <legend>사용자 정보</legend>
+                <ul>
+                    <li>
+                        <label for="uid">아이디</label><input type="text" id="uid" name="id"  autofocus required>
+                    </li>
+
+                    <li>
+                        <label for="upw">비밀번호</label><input type="password" id="upw" name="pw"  required>
+                    </li>
+
+                    <li>
+                        <label for="uem">이메일</label><input type="email" id="uem" name="em" placeholder="abc@gmail.com" required>
+                    </li>
+
+                    <li>
+                        <label for="ubir">생년월일</label><input type="date" id="ubir" name="bir">
+                    </li>
+                    나이<input type="range" min="0" max="120" step="1" value="20">
+                    <li>
+                        <label for="utel">전화번호</label><input type="tel" id="utel" name="tel1" placeholder="xxx-xxxx-xxxx">
+                    </li>
+                    <li>
+                        <label for="um">메모</label><textarea name="bigtext" id="um" cols="40" rows="25"></textarea>
+                    </li>
+                    <li>
+                        성별 
+                        <select name="gender">
+                            <option value="male">남</option>
+                            <option value="female">여</option>
+                        </select>   
+                    </li>
+                </ul>
+            
+        </fieldset>
+        <fieldset>
+            <legend>
+                취미
+            </legend>
+            <label for="hab1">운동</label><input type="checkbox" id="hab1" name="habi1" value="hab11">
+            <label for="hab2">음악</label><input type="checkbox" id="hab2" name="habi2" value="hab22">
+            <label for="hab3">운동</label><input type="checkbox" id="hab3" name="habi3" value="hab22">
+        </fieldset>
+        <fieldset>
+            <legend>
+                새로운 소식
+            </legend>
+            <label for="ra1">메일 수신 동의</label><input type="radio" id="ra1" name="r1" value="r11" checked> <label for="ra2">메일 수신 미동의</label><input type="radio" id="ra2" name="r1" value="r22">
+        </fieldset>
+        <input type="submit" value="확인">
+        <input type="reset" value="취소">
+    </form>
+    </body>
+</html>

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <style>
+            .box{
+                width: 50px;
+                height: 50px;
+                position: absolute;
+                /*position: static;    default position*/
+                /*relative 속성을 사용할 경우 부모 박스 태그가 relative 속성을 갖어야 하고 자식은 absolute속성을 갖어야 부모 박스 안에서 의도에 맞게 적용됨 */
+                /**/
+                /**/
+
+
+                
+            }
+            .box:nth-child(1){
+                background-color: red;
+                right: 30px; top: 30px;
+                z-index: 2000;
+                /* z-index -> 값이 클수록 다른 컨텐츠와 겹쳤을 때 창의 앞쪽으로 노출됨 */
+            }
+            .box:nth-child(2){
+                background-color: green;
+                left: 90px; top: 90px;
+            }
+            .box:nth-child(3){
+                background-color: blue;
+                height: 100px;
+                width: 100px;
+                border-radius: 50%;
+                top: 50%; left: 50%;
+                transform: translate(-50%, -50%);/*==margin-left:-200px; margin-right:-50px*/
+
+
+                
+
+                
+            }
+
+            body > div{
+                width: 400px; height: 100px;
+                border:3px solid black;
+                position:relative;
+                overflow: scroll;
+                
+            }
+
+       
+
+        </style>
+        <title>position P</title>
+    </head>
+    <body>
+        <h1>
+            asdfasdfasdf
+        </h1>
+        <div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            
+        </div>
+
+        <h1>asdfsadfsadf</h1>
+    </body>
+</html>

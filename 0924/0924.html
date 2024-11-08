@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta>
+        <style>
+            body{
+                width:500px;
+                margin: 10px auto;
+            }
+            #middle{
+                overflow: hidden; /*overflow 속성을 주지 않으면 bottom 박스가 빈공간을 채워 올라옴*/
+                /* background-color: yellow; */
+            }
+            #left{
+                float: left; width: 150px; background: red;
+
+            }
+            #right{
+                float:right; width:300px; background: blue;
+            }
+            #top{
+                background: green;
+            }
+            #bottom{
+                background: purple;
+                clear: both;/*상속받은 float속성을 지우는 코드*/
+            }
+        </style>
+    </head>
+    <body>
+        <div id="top">1234</div>
+        <div id="middle">
+            <div id="left">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam elit elit, ornare non elementum ut.</div>
+        <div id="right">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam elit elit, ornare non elementum ut, imperdiet nec felis. Proin leo felis, congue vitae facilisis id, ullamcorper vitae ipsum. Integer a risus sed libero imperdiet lacinia vel vel massa. Vestibulum tempus ullamcorper tellus vitae gravida. Donec cursus, enim at porta auctor, purus sapien luctus erat, vitae placerat ante nibh eget lectus. Integer a leo sit amet neque suscipit commodo sed et mauris. Nullam a turpis nunc. Ut metus risus, scelerisque ac dignissim non, faucibus ac metus.</div>
+    
+        </div>
+        <div id="bottom">qwerweraaaaaaaaaa qwer aaaaaaaaaa  eraa aaaaaaaaqweraaaaa aaaaaweraaaaaaaaa aqweraaaaaaaaaaweraaaaaaaaaaqw eraaaaaaaa aaweraaaaaaa aaaqweraaaaaaaaaa</div>
+    </body>
+</html>

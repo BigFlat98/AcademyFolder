@@ -1,0 +1,21 @@
+    .container{
+        margin: 20px auto;
+        width: 500px;
+        border: 2px solid black;
+        position: relative;
+    }
+
+    .container .img_box{
+        
+    }
+        .container .img_box img{
+            width: 500px;
+        }
+    .container #open_btn{
+        position: absolute;
+        bottom: 0;
+        left: 0;
+    }
+        .container .main_contents{
+            display: none;
+        }

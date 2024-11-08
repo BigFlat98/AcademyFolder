@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+		<meta charset="UTF-8">
+  </head>
+  <body>
+	<form action="" method="post"> <!--아무것도 적지 않았으면 기본 get방식,method="post" -->
+    <fieldset>
+        <legend>상품 선택</legend>
+      
+    </fieldset>
+    <fieldset>
+        <legend>배송 정보</legend>
+        <ur>
+            <li>
+                <label for="여기ㅋㅋ">이름</label><input type="text" id="여기2" name="이름"><!--이렇게 사용하는게 좋음 id로 특정 부분만 css적용이 가능함-->
+            </li>
+            <li>
+                <label>배송 주소<input type="text" name="주소"></label>
+            </li>
+            <li>
+                <label>이메일<input type="email" name="이메일"></label>
+            </li>
+            <li>
+                <label>연락처<input type="tel" name="연락처"></label>
+            </li>
+        </ur>
+        <input type="submit" value="확인"><input type="reset" id="여기ㅋㅋ" value="취소">
+    </fieldset>
+        <input type="text" name="test">
+    <br /><br /><br />
+    <hr/>
+    <br /><br /><br />
+
+    <fieldset>
+        <legend>상품 선택</legend>
+        주문할 상품을 선택해 주세요<br />
+
+        <ur>
+            <li>
+                <label for="prod1"><input type="checkbox" name="prod1" value="s_1">선물용 1kg<input type="number" name ="quantity" min="1" max="5" step="1" value="1">개(최대 5개)</label>
+            </li>
+            <li>
+                <label for="prod2"><input type="checkbox" name="prod2" value="s_2">선물용 3kg<input type="number" name ="quantity2" min="1" max="5" step="1" value="1">개(최대 5개)</label>
+            </li>
+            <li>
+                <label for="prod3"><input type="checkbox" name="prod3" value="s_3">선물용 5kg<input type="number" name ="quantity3" min="1" max="5" step="1" value="1">개(최대 5개)</label>
+            </li>
+            <li>
+                <label for="prod4"><input type="checkbox" name="prod4" value="s_4">선물용 10kg<input type="number" name ="quantity4" min="1" max="5" step="1" value="1">개(최대 5개)</label>
+            </li>
+        </ur>
+        포장 선택<br />
+        <ur>
+            <li>
+                <label for="prod5"><input type="radio" name="prod5" value="s_5">선물용 1kg</label>
+            </li>
+            <li>
+                <label for="prod5"><input type="radio" name="prod5" value="s_6">선물용 1kg</label>
+            </li>
+        </ur>
+    </fieldset>
+
+
+    <br /><br /><br />
+    <hr/>
+    <br /><br /><br />
+    
+    <fieldset>
+        <legend>배송 정보</legend>
+        <ur>
+            <li>
+                <label for="aa">이름</label><input type="text" id="aa" name="이름" autofocus><!--이렇게 사용하는게 좋음 id로 특정 부분만 css적용이 가능함-->
+            </li>
+            <li>
+                <label>배송 주소<input type="text" name="ad" placeholder="배송 주소 입력" required></label>
+            </li>
+            <li>
+                <label>이메일<input type="email" name="em" required></label>
+            </li>
+            <li>
+                <label>연락처<input type="tel" name="tele"></label>
+            </li>
+            <li>
+                <label for="dt">배송지정</label><input type="date" id="dt">(주문일로부터 최소 3일)
+            </li>
+            <li>
+                메모<textarea name="message" rows="10" cols="30" readonly>Write something here</textarea>
+            </li>
+        </ur>
+        
+    </fieldset>
+
+  </form>
+  </body>
+</html>

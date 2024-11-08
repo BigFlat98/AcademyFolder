@@ -1,0 +1,29 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-size: 1.3em;
+    text-align: center;
+}
+body > h1{
+    width: 1000px;
+    text-align: center;
+    margin: 0 auto;
+}
+body > p{
+    width: 500px;
+    margin: 0 auto;
+}
+body > #imgBox{
+    width: 500px;
+    height: 500px;
+    margin: 0 auto;
+    display: none;
+}
+body > #imgBox > #imgSrc{
+    width: 500px;
+    height: 500px;
+}

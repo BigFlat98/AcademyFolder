@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <style>
+            .boxContainer{
+                display: flex;
+                
+            }
+            .bbox{
+                width: 100px;
+                height: 100px;
+                border: 2px solid black;
+                margin: 0 10px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="box">test classList box~</div>
+        <button class="btn">button</button>
+        <div class="boxContainer">
+            <div class="bbox">box1</div>
+            <div class="bbox">box2</div>
+            <div class="bbox">box3</div>
+            <div class="bbox">box4</div>
+            <div class="bbox">box5</div>
+        </div>
+        <script>
+            const boxIe = document.querySelector('.box');
+            let isCon = boxIe.classList.add('active'); //.box 클래스를 갖는 첫번째 엘리멘트에 active라는 클래스를 추가. 추가 성공 시 isCon에 boolean속성인 true저장
+            console.log(isCon);
+
+            boxIe.classList.remove('active');
+            // const btnIe = document.querySelector('.btn');
+            // btnIe.addEventListener(onclick,function(){
+            //      boxIe.classList.remove('active');
+            // });
+
+            let boxIes = document.querySelectorAll('.bbox');//클래스 명을 갖은 엘리멘트를 순서대로 모두 변수에 배열 형태로 초기화
+            boxIes.forEach(function(eachBox,index){
+                eachBox.classList.add('order-'+index);
+            });
+
+
+        </script>
+    </body>
+</html>

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <style>
+            *{
+                margin: 0;
+                padding: 0;
+            }
+            li{
+                list-style: none;
+            }
+            a{
+                text-decoration: none;
+            }
+            #h{
+                position: fixed;
+                top: 0;
+                left: 0;
+                right: 0;
+                height: 80px;
+                width: 100%;
+                background-color: rgb(196, 227, 255);
+                box-shadow: 0 2px 2px rgba(4, 40, 69, 0.05),0 1px 0 rgba(4, 40, 69,0.05);
+            }
+            .left{
+                float: left;
+            }
+            #logo{
+                display: inline-block;
+                height: 50px;
+                margin: 15px 0 15px 30px;
+            }
+            #logo_img{
+                height: 50px;
+            }
+            .right{
+                float: right;
+            }
+            .right>nav>ul>li{
+                display:inline-block;
+                padding: 0 15px;
+            }
+            .right>nav>ul>li>a{
+                line-height: 80px;
+            }
+            #content:after{
+                content: "";
+                display: block;
+                clear:both;
+            }
+
+        </style>
+    </head>
+    <body>
+        <div id="h">
+            <div class="left"><a href="#" id="logo"><img src="./b31d242d695ecd203abd1906b2268029.jpg" id="logo_img"></a></div>
+            <div class="right">
+                <nav>
+                    <ul id="nav_con">
+                        <li><a href="#" id="a">aa</a></li>
+                        <li><a href="#" id="b">bb</a></li>
+                        <li><a href="#" id="c">cc</a></li>
+                        <li><a href="#" id="d">dd</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div id="content">
+                <div id="left_side">
+
+                </div>
+                <div id="main">
+
+                </div>
+            </div>
+
+        </div>
+    </body>
+</html>
