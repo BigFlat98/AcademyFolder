@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <img src = "images.jpeg" />
+    <script>
+        document.addEventListener('DOMContentLoaded',()=>{ //dom의 구성이 끝난 시점에 실행문 실행.
+            const imgs = document.querySelectorAll('img');
+            imgs.forEach((img)=>{
+                img.addEventListener('contextmenu',(event)=>{ //contextmenu -> 마우스 우클릭 했을 때 나오는 메뉴.
+                    event.preventDefault(); //마우스 우클릭 이벤트를 실행되지 않도록. preventDefault()->event실행 저지. even파라미터가 반드시 필요함.
+                })
+            })
+        })
+    </script>
+</body>
+</html>

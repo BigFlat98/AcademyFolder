@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+    </head>
+    <body>
+        <h3>word count : 0</h3>
+        <input type="text" name="title" id="title" />
+        <script>
+            const h3 = document.querySelector('h3');
+            const input = document.querySelector('input');
+
+            input.addEventListener("keyup",function(event){
+                const length = input.value.length; //html input 태그는 value가 값이고 값을 name에 지정한 변수명으로 저장, 전달. 때문에 여기서 input.value로 적어준거임.
+                h3.textContent = `word count : ${length}`;
+            });
+            
+        </script>
+    </body>
+</html>

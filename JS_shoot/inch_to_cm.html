@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <input type="text" id="inchInput"> inch
+    <button id="convertButton">계산</button>
+    <p id="result"></p>
+
+    <script>
+                // 변환 공식 : inch * 2.54 => cm
+        const inchInput = document.getElementById('inchInput');
+        const result = document.querySelector('#result');
+        const btn = document.querySelector("#convertButton");
+        btn.addEventListener("click",()=>{
+            const r = inchInput.value * 2.54;
+            console.log(inchInput.value);
+            result.textContent = `${r}`;
+        });
+
+    </script>
+</body>
+
+</html>
